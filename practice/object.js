@@ -30,7 +30,7 @@ let obj3={3:"d",4:"c"}
 // let obj4=Object.assign({},obj2,obj3)//target--->{} and source--->obj2,obj3
 let obj4={...obj2,...obj3}//often used
 // console.log(obj4);
-// console.log(Object.keys(obj));
+console.log(Object.keys(obj));
 // console.log(Object.values(obj))
 
 

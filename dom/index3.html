@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+
+<body style="background-color: #212212; color:#fff ">
+    <ul class="language">
+        <li>javascript</li>
+
+    </ul>
+</body>
+<script>
+    function addlanguage(langname) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langname}`
+        document.querySelector('.language').appendChild(li)
+    }
+    // addlanguage('python')
+    // addlanguage('typescript')
+
+    function addoptimlanguage(langname) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptimlanguage('python')
+    addoptimlanguage('nextjs')
+    const seclang = document.querySelector("li:nth-child(2)")
+    // seclang.innerHTML="mojo"
+    const newli = document.createElement('li')
+    newli.textContent = "mojo"/////;here we are not appending the text by using function instead we are using ".textContent" which add the text content into the ul list
+    seclang.replaceWith(newli)
+
+  
+    const fstlang=document.querySelector('li:first-child')
+    const newli2 = document.createElement('li')
+    newli2.textContent='ruby'
+    fstlang.replaceWith(newli2)
+    const lastlang=document.querySelector("li:last-child")
+    lastlang.remove()
+</script>
+
+</html>
