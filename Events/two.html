@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>continue with events</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+const variable=setTimeout(() => {
+console.log("Events");
+document.querySelector('h1').innerHTML="best js series"
+    }, 2000);
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearTimeout(variable)
+        console.log("stopped");
+    })
+</script>
+</html>
