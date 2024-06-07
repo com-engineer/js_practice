@@ -8,8 +8,26 @@
 <body>
     <h1>continue with events</h1>
     <button id="stop">stop</button>
+    <button id="start">start</button>
+
 </body>
 <script>
+    const sayDate=function(str){
+    console.log(`${str} Gaurav`,Date.now());
+}
+let intervalId=setInterval(sayDate,1000,"hii")
+// clearInterval(intervalId)
+const stop=document.querySelector('#stop')
+const start=document.querySelector('#start')
+start.addEventListener('click',()=>{
+    console.log("interval is started");
+    intervalId=setInterval(sayDate,1000,"hii")
+})
+stop.addEventListener('click',()=>{
+    clearInterval(intervalId)
+    console.log("interval is stopped");
+})
+
 
 </script>
 </html>
