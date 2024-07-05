@@ -16,9 +16,9 @@ Object.prototype.gaurav=function(){
 Array.prototype.heygaurav=function(){
     console.log("gaurav says hello");
 }
-// heropower.gaurav()
-// myhero.gaurav()
-myhero.heygaurav()
+heropower.gaurav()
+myhero.gaurav()
+// myhero.heygaurav()
 // heropower.heygaurav()
 
 

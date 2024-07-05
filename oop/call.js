@@ -1,6 +1,6 @@
 function setUsername(username){
     this.username=username
- 
+    // console.log(this)
     console.log("called");
 }
 

@@ -12,7 +12,7 @@ const user={
 
 // console.log(user.username);
 // // console.log(user.getUserDetails());
-// console.log(this);
+console.log(this);
 // const promiseone=new Promise()//new--->constructor function date=new Date()
 function User(username,logincount,islogedin){
     this.username=username
